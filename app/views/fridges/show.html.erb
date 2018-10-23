@@ -1,0 +1,13 @@
+<h1>Fridges#show</h1>
+
+
+  <h1>
+  <div><%= @Fridge.location %> </div>
+ <div> <%= @Fridge.brand %> </div>
+  <div><%= @Fridge.size %> </div>
+
+</h1>
+
+<div>
+<%= link_to("Destroy", "/fridges/"+@Fridge.id.to_s, method: :delete)%>
+</div>
